@@ -292,6 +292,11 @@ class SupersetAppInitializer:
                 "ROW_LEVEL_SECURITY"
             ),
         )
+        appbuilder.add_link(
+            "Test",
+            label=__("Test"),
+            href="www.google.com"
+        )
 
         #
         # Setup views with no menu
