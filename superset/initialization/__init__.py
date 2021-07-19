@@ -292,11 +292,6 @@ class SupersetAppInitializer:
                 "ROW_LEVEL_SECURITY"
             ),
         )
-        appbuilder.add_link(
-            "Test",
-            label=__("Test"),
-            href="www.google.com"
-        )
 
         #
         # Setup views with no menu
@@ -375,6 +370,15 @@ class SupersetAppInitializer:
                     self.config["ALLOWED_EXTENSIONS"]
                 )
             ),
+        )
+        appbuilder.add_link(
+            "Test Link",
+            label=_("Test Link"),
+            href="www.google.com",
+            icon="fa-search",
+            category_icon="fa-flask",
+            category="Other services",
+            category_label=__("Linkes"),
         )
 
         try:
